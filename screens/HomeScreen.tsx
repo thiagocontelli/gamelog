@@ -44,7 +44,6 @@ export function HomeScreen({ navigation }: Props) {
   return (
     <View
       style={{
-        backgroundColor: '#604CC3',
         flex: 1
       }}
     >
@@ -58,7 +57,7 @@ export function HomeScreen({ navigation }: Props) {
         refreshing={isLoading}
       />
 
-      <View style={{ backgroundColor: '#FF7F3E', paddingHorizontal: 16, paddingVertical: 16 }}>
+      <View style={{ backgroundColor: '#FFF', paddingHorizontal: 16, paddingVertical: 16, borderTopWidth: 1, borderColor: 'lightgray' }}>
         <Button title='Adicionar jogo' onPress={goToAddGame} />
       </View>
     </View>

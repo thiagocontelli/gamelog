@@ -13,12 +13,7 @@ const RootStack = createStackNavigator<RootStackParamList>();
 export default function App() {
   return (
     <NavigationContainer>
-      <RootStack.Navigator
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: 'pink'
-          },
-        }}>
+      <RootStack.Navigator>
         <RootStack.Screen options={{ title: 'Jogos' }} name="Home" component={HomeScreen} />
         <RootStack.Screen options={{ title: 'Adicionar jogo' }} name="AddGame" component={AddGameScreen} />
       </RootStack.Navigator>
